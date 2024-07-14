@@ -1558,7 +1558,8 @@ void Context::end()
 			m_maxVertThisPrim = m_maxVertThisPrim + Vec3(1.0f);
 			if (!isVisible(m_minVertThisPrim, m_maxVertThisPrim))
 			{
-				vertexList->resize(m_firstVertThisPrim, VertexData());
+				if (m_firstVertThisPrim > vertexList->size())
+					vertexList->resize(m_firstVertThisPrim, VertexData());
 			}
 		#endif
 	}
