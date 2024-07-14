@@ -22,6 +22,7 @@
 	2017-03-01 (v1.02) - Configurable VertexData alignment (IM3D_VERTEX_ALIGNMENT).
 	2017-02-23 (v1.01) - Removed AppData::m_tanHalfFov, replaced with AppData::m_projScaleY. Added AppData::m_projOrtho.
 */
+#pragma warning(disable : 4456 4189 4100 4505)
 #include "im3d.h"
 #include "im3d_math.h"
 
